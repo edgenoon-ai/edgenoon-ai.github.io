@@ -259,6 +259,7 @@
     float: left;
     margin-bottom: 0;
     width: span(4 of 12);
+    padding-top: 10px;
 
     &:nth-child(3n + 1) {
       clear: both;
@@ -278,6 +279,36 @@
     .feature__item-teaser {
       max-height: 200px;
       overflow: hidden;
+    }
+  }
+
+  &--two{
+    @include breakpoint($small) {
+      float: left;
+      margin-bottom: 0;
+      width: span(6 of 12);
+      text-align: center;
+  
+      &:nth-child(2n + 1) {
+        clear: both;
+        margin-left: 0;
+      }
+  
+      &:nth-child(2n + 2) {
+        clear: none;
+        margin-left: gutter(of 12);
+      }
+  
+      .feature__item-teaser {
+        max-height: 180px;
+        overflow: hidden;
+      }
+
+      img {
+        width: 50%;
+        border-radius: 50%;
+      }
+      
     }
   }
 
