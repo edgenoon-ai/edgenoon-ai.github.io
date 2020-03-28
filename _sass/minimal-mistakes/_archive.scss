@@ -26,6 +26,10 @@
     text-justify: inter-word;
   }
 
+  p .bio{
+    text-align: center;
+  }
+
   a {
     position: relative;
     z-index: 10;
@@ -80,6 +84,7 @@
 .archive__item-excerpt {
   margin-top: 0;
   font-size: $type-size-6;
+  
 
   & + p {
     text-indent: 0;
@@ -293,6 +298,10 @@
       margin-bottom: 0;
       width: span(6 of 12);
       text-align: center;
+      
+    p{
+      text-align: center;
+    }
   
       &:nth-child(2n + 1) {
         clear: both;
