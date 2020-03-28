@@ -183,6 +183,7 @@ body:hover .visually-hidden button {
 .full {
   @include breakpoint($large) {
     margin-right: -1 * span(2.5 of 12) !important;
+    padding-bottom: 10px;
   }
 }
 

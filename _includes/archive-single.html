@@ -17,7 +17,16 @@
         <img src="{{ teaser | relative_url }}" alt="">
       </div>
     {% endif %}
+    <div style="float: left; padding-right: 25px; background-size: cover;">
+    {% if post.image %}
+      <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/{{ post.image }}" style="width: 150px; height: 150px;"></img>
+    {% else %}
+      <img src="{{ site.url }}{{ site.baseurl }}/assets/images/transparent.png" style="width: 150px; height: 150px;"></img>
+    {% endif %}
+    
+    </div>
     <h2 class="archive__item-title" itemprop="headline">
+
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
