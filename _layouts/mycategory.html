@@ -12,7 +12,9 @@ layout: archive
       {% for post in year.items %}
         {% for cat in post.category %}
         {% if page.category contains cat %} 
-          {% include archive-single.html type=page.entries_layout %}
+          <p>
+            {% include archive-single.html type=page.entries_layout %}
+          </p>
         {% endif %}
       {% endfor %}
       {% endfor %}
