@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Home"
+    url: "/"
   - title: "Edge"
     url: /edge/
   - title: "Robot Operating System"
