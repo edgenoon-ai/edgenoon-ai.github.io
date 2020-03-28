@@ -2,8 +2,8 @@
 main:
   - title: "Home"
     url: "/"
-  - title: "Edge"
-    url: /edge/
+  - title: "Edge devices"
+    url: /edge-devices/
   - title: "Robot Operating System"
     url: /robot-operating-system/
   - title: "Signal processing"
