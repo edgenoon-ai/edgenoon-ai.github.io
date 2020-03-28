@@ -20,8 +20,11 @@
 
 .archive__item {
   position: relative;
-  text-align: justify;
-  text-justify: inter-word;
+
+  p{
+    text-align: justify;
+    text-justify: inter-word;
+  }
 
   a {
     position: relative;
@@ -72,8 +75,6 @@
     margin-top: 1em;
     border-bottom: none;
   }
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 .archive__item-excerpt {
