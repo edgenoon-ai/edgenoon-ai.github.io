@@ -250,10 +250,10 @@
 
 .feature__wrapper {
   @include clearfix();
+  margin-top: 3em;
   margin-bottom: 2em;
   border-bottom: 1px solid $border-color;
   text-align: justify;
-  text-justify: inter-word;
 
   .archive__item-title {
     margin-bottom: 0;
