@@ -31,7 +31,7 @@ bartoszptak:
 MatPiech:
   name             : "Mateusz Piechocki"
   avatar           : "/assets/images/bio-MatPiech.jpeg"
-  bio              : "I am an **amazing** person."
+  bio              : "Master's Degree student of Automatic Control and Robotics at Poznań University of Technology. Member of PUT Motorsport Driverless team. Interested in machine learning, robotics and computer vision."
   location         : "Poznań, Poland"
   email            :
   links:
