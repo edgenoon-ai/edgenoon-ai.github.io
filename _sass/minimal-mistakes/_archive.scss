@@ -293,15 +293,20 @@
   }
 
   &--two{
-    @include breakpoint($small) {
-      float: left;
-      margin-bottom: 0;
-      width: span(6 of 12);
-      text-align: center;
-      
+    text-align: center;
+
     p{
       text-align: center;
     }
+    img {
+      width: 50%;
+      border-radius: 50%;
+    }
+
+    @include breakpoint($small) {
+      float: left;
+      margin-bottom: 0;
+      width: span(6 of 12);      
   
       &:nth-child(2n + 1) {
         clear: both;
@@ -317,13 +322,9 @@
         max-height: 180px;
         overflow: hidden;
       }
-
-      img {
-        width: 50%;
-        border-radius: 50%;
-      }
-      
     }
+
+
   }
 
   .archive__item-body {
