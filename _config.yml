@@ -69,8 +69,10 @@ yandex_site_verification :
 naver_site_verification  :
 
 # Social Sharing
+medium:
+  username               : edgenoon
 twitter:
-  username               :
+  username               : edgenoon
 facebook:
   username               :
   app_id                 :
