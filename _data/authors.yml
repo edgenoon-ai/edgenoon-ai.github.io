@@ -16,7 +16,7 @@ bartoszptak:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/bartoszptak"
-    - label: "Linkedin"
+    - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/bartoszptak/"
     - label: "Twitter"
@@ -50,7 +50,7 @@ MatPiech:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/MatPiech"
-    - label: "Linkedin"
+    - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/mateusz-piechocki-68b517192/"
 #####################################################
