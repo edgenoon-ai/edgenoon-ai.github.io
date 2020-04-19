@@ -3,7 +3,7 @@
 bartoszptak:
   name             : "Bartosz Ptak"
   avatar           : "/assets/images/bio-bartoszptak.jpeg"
-  bio              : "Student of Robots and Autonomous Systems specialization at Poznan University of Technology, interested in GPUs, EDGE devices, deep learning and image processing"
+  bio              : "Master’s Degree student of Robots and Autonomous Systems specialization at Poznan University of Technology, interested in GPUs, EDGE devices, deep learning and image processing."
   location         : "Poznań, Poland"
   email            :
   links:
@@ -16,7 +16,7 @@ bartoszptak:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/bartoszptak"
-    - label: "Linkedin"
+    - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/bartoszptak/"
     - label: "Twitter"
