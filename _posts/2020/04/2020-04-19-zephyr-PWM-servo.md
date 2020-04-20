@@ -6,7 +6,7 @@ excerpt: "Simple introduction to Zephyr PWM control with servo example."
 modified: 2020-04-19
 tags: [intro, beginner, tutorial, zephyr, PWM]
 category: edge-devices
-image: "2020/04/zephyr_PWM_servo/servo_post_image.jpg"
+image: "assets/images/posts/2020/04/zephyr_PWM_servo/servo_post_image.jpg"
 ---
 
 <br/>
