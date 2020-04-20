@@ -9,8 +9,9 @@ category: [signal-processing]
 image: "assets/images/posts/2020/04/coco-dataset_format/object-detection.jpg"
 ---
 
+Many state-of-the-art algorithms for object detection are trained evaluated on a COCO dataset set. In this article I show you how to adapt your collection to this format.
 
-# Directory structure
+### Directory structure
 
 Of course, you can arrange the folders differently. However, this is the easiest way to be compatible with the COCO dataset. It is correct to keep the training, validation and test sets in separate `.json` files. The type of photos does not matter, and if you want to divide them into folders, you must include the names of the folders when creating dictionaries of the data set.
 
@@ -28,8 +29,6 @@ Of course, you can arrange the folders differently. However, this is the easiest
     ... 
 
 ```
-
-# Python dictionary structures
 
 ### Main dictionary
 In Python, you can build such a dataset using dictionaries and lists, and finally serialize it using the `json` module. The structure of the main dictionary is shown in the following code:
