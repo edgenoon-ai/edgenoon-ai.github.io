@@ -9,7 +9,12 @@ category: [signal-processing]
 image: "assets/images/posts/2020/04/coco-dataset_format/object-detection.jpg"
 ---
 
-Many state-of-the-art algorithms for object detection are trained evaluated on a COCO dataset set. In this article I show you how to adapt your collection to this format.
+Many [state-of-the-art algorithms for object detection](https://paperswithcode.com/area/computer-vision/object-detection) are trained to evaluate on a [COCO dataset](http://cocodataset.org/#home). In this
+article I show you how to adapt your collection to this format. This instruction focuses only on the
+minimal need for object detection, and fragments related to segmentation and description of
+objects are omitted. If you are going to make your dataset publicly available, you should also pay
+attention to the photo licenses.
+
 
 ### Directory structure
 
