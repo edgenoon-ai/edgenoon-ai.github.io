@@ -3,7 +3,7 @@ layout: single
 title: "Depther project - part 1: collect calibration data"
 author: bartoszptak
 excerpt: "This post is an introduction to the task of OpenCV camera calibration and creating a deep image from a stereo vision camera. The first topic is to get the right calibration data."
-modified: 2020-04-20
+modified: 2020-05-06
 tags: [opencv, dual camera, calibration]
 category: [signal-processing]
 image: "assets/images/posts/2020/05/depther-collect-calibration-data/Checkerboard.jpg"
