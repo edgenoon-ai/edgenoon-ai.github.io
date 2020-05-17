@@ -1,0 +1,43 @@
+{% assign authors = site.data.authors %}
+
+
+<div class="feature__wrapper">
+
+  {% for f in authors %}
+  {% assign items = f[1] %}
+  <div class="feature__item--two">
+    <div class="archive__item">
+      {% if items.avatar %}
+      <div class="archive__item-teaser{% if include.option %}-{{ include.option }}{% endif %}">
+        <img src="{{ items.avatar | relative_url }}" alt="{{ items.name }}">
+      </div>
+      {% endif %}
+
+      <div class="archive__item-body">
+        {% if items.name %}
+        <h2 class="archive__item-title">{{ items.name }}</h2>
+        {% endif %}
+
+        {% if items.bio %}
+        <div class="archive__item-excerpt">
+          {{ items.bio | markdownify }}
+        </div>
+        {% endif %}
+
+        <ul class="social-icons" style="padding: 0; list-style-type: none;">
+          {% if items.links %}
+            {% for link in items.links %}
+              {% if link.label and link.url %}
+              <a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i
+                  class="{{ link.icon | default: 'fab fa-fw fa-github' }}" aria-hidden="true"></i></a>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+</div>
