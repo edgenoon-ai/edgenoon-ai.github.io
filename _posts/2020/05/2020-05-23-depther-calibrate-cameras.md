@@ -42,10 +42,10 @@ The returned values of interest to us are: 3x3 floating-point camera matrix and 
 imageSize = (1280, 720)
 
 matrix_left, distortion_left = cv2.calibrateCamera(
-            self.arrays[0][:, 1], self.arrays[0][:, 2], imageSize, None, None)[1:3]
+            left_obj, left_points, imageSize, None, None)[1:3]
 
 matrix_right, distortion_right = cv2.calibrateCamera(
-            self.arrays[0][:, 1], self.arrays[1][:, 2], imageSize, None, None)[1:3]
+            left_obj, right_points, imageSize, None, None)[1:3]
 ```
 
 # Calibrates a stereo camera set up
@@ -56,7 +56,7 @@ As a result, we get the external parameters of the right camera in the left syst
 
 ```python
 rotation_matrix, translation_matrix = cv2.stereoCalibrate(
-            self.arrays[0][:, 1], self.arrays[0][:, 2], self.arrays[1][:, 2],
+            left_obj, left_points, right_points,
             matrix_left, distortion_left,
             matrix_right, distortion_right,
             self.imageSize, flags=cv2.CALIB_FIX_INTRINSIC, criteria=self.term)[5:7]
