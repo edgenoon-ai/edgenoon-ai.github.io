@@ -9,6 +9,9 @@ category: [signal-processing]
 image: "assets/images/posts/2020/05/depther-calibrate-cameras/Checkerboard.png"
 ---
 
+### Previous parts
+*  **[Depther project - part 1: collect calibration data](../depther-collect-calibration-data)**
+
 This article shows how to perform dual camera calibration using cv2.calibrateCamera when we have data collected. Next, we discuss how to calibrate cameras with each other using cv2.stereoRectify. This article is rich in links to OpenCV documentation. It is very well written and describes well how algorithms work.
 
 # Checkboard corners
