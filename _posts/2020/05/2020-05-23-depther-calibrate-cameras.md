@@ -92,11 +92,7 @@ ROI_left, ROI_right = cv2.stereoRectify(
  [-0.069396, -6.556753, -0.000429]
 ]
 ```
-We can calculate the [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance) between cameras with the formula: 
-$$
-d(L,R) = \sqrt{(x_{L}-x_{R})^{2} + (y_{L}-y_{R})^{2} + (z_{L}-z_{R})^{2}}
-$$
-. The left camera is at the point (0,0,0), so the calculations are simplified and we get the result: `6.557120`.
+We can calculate the [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance) between cameras. The left camera is at the point (0,0,0), so the calculations are simplified and we get the result: `6.557120`.
 
 * dispartity matrix
 ```text
