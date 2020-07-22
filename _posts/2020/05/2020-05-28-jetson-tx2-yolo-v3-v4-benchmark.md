@@ -1,10 +1,10 @@
 ---
 layout: single
-title: "Jetson TX2: framerate comparison between YOLOv4 and YOLOv3-tyny"
+title: "Jetson TX2: framerate comparison between YOLOv4 YOLOv4-tiny and YOLOv3-tyny"
 author: bartoszptak
-excerpt: "How does YOLOv4 work on NVIDIA Jetson TX2? We compare with YOLOv3-tyny to choose an effective and fast fast object detection system."
-modified: 2020-05-28
-tags: [nvidia, jetson, tx2, yolov3, yolov4, fps, benchmark]
+excerpt: "[UPDATE] How does YOLOv4 work on NVIDIA Jetson TX2? We compare with YOLOv3-tyny and YOLOv4-tiny to choose an effective and fast fast object detection system."
+modified: 2020-07-22
+tags: [nvidia, jetson, tx2, yolov3, yolov4, tiny, fps, benchmark]
 category: edge-devices
 image: "assets/images/posts/2020/05/jetson-tx2-yolo-v3-v4-benchmark/predictions.jpg"
 ---
@@ -125,7 +125,8 @@ make
 |         YOLOv4        	|  416 	|  60.1  	|  62.8%  	| (as above) 	| (as above) 	|
 |         YOLOv4        	|  320 	|  35.5  	|  60.0%  	| (as above) 	| (as above) 	|
 | EfficientNetB0-Yolov3 	|  416 	|   3.7  	|  45.5%  	|    [link](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/enet-coco.cfg)    	|    [gdrive](https://drive.google.com/file/d/1FlHeQjWEQVJt0ay1PVsiuuMzmtNyv36m/view)    	|
-|      YOLOv3-tyny      	|  416 	|   3.5  	|  33.1%  	|    [link](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov3-tiny-prn.cfg)    	|    [gdrive](https://drive.google.com/file/d/18yYZWyKbo4XSDVyztmsEcF9B_6bxrhUY/view)    	|
+|      YOLOv3-tyny-prn      	|  416 	|   3.5  	|  33.1%  	|    [link](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov3-tiny-prn.cfg)    	|    [gdrive](https://drive.google.com/file/d/18yYZWyKbo4XSDVyztmsEcF9B_6bxrhUY/view)    	|
+|      YOLOv4-tyny      	|  416 	|   6.9  	|  40.2%  	|    [link](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4-tiny.cfg)    	|    [link](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-tiny.weights)    	|
 
 To download configs, just use `wget "<file_url>"`. For downloading from Google Drive in the console you can install `sudo pip install gdown` and download using: `gdown https://drive.google.com/uc?id=<gdrive_file_id>`.
 
@@ -174,6 +175,7 @@ channels=3
 |         YOLOv4        	|  416 	|  60.1  	|  62.8%  	|    5.4     	|
 |         YOLOv4        	|  320 	|  35.5  	|  60.0%  	| 	 7.6	 	|
 | EfficientNetB0-Yolov3 	|  416 	|   3.7  	|  45.5%  	|    0.7       	|
-|      YOLOv3-tyny      	|  416 	|   3.5  	|  33.1%  	|   57.0    	|
+|      YOLOv3-tyny-prn      	|  416 	|   3.5  	|  33.1%  	|   57.0    	|
+|      YOLOv4-tyny      	|  416 	|   6.9  	|  40.2%  	|   42.0    	|
 
 Not cool. The results are not satisfactory. Maybe it would work much better for fewer classes? Maybe changing the parameters would lead to optimization? Why is YOLO with EfficientNet backbone so weak? We currently have no idea.
